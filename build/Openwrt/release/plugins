@@ -1,4 +1,5 @@
 luci-app-advanced
+luci-app-docker
 luci-app-aliyundrive-webdav
 luci-app-argon-config
 luci-app-autoupdate
