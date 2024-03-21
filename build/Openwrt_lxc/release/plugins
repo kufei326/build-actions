@@ -10,14 +10,10 @@ luci-app-opkg
 luci-app-passwall
 luci-app-passwall2
 luci-app-pushbot
-luci-app-rclone
 luci-app-smartdns
 luci-app-ssr-plus
 luci-app-store
 luci-app-ttyd
-luci-app-turboacc
-luci-app-webadmin
-luci-app-wechatpush
 luci-app-wolplus
 luci-theme-argon
 luci-theme-bootstrap
