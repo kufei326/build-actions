@@ -69,7 +69,7 @@ if [[ -n "${ZZZ_PATH}" ]]; then
 fi
 
 # x86机型,默认内核6.1，修改内核为6.1
-#echo NEW_KERNEL_PATCHVER="6.6" >> ${GITHUB_ENV}
+export NEW_KERNEL_PATCHVER="6.6"
 
 # 禁用ipv6前缀
 sed -i 's/^[^#].*option ula/#&/' /etc/config/network
