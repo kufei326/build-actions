@@ -14,10 +14,10 @@ cat >> ${FILE_DEFAULT_UCI} <<-EOF
 #uci set network.lan.ifname='eth0 eth1'                         # 设置lan口物理接口为eth0、eth1
 #uci set network.lan.ifname='eth0'                              # 设置lan口物理接口为eth0
 uci set network.lan.proto='static'                              # lan口静态IP
-uci set network.lan.ipaddr='192.168.1.2'                        # IPv4 地址(openwrt后台地址)
+uci set network.lan.ipaddr='192.168.5.4'                        # IPv4 地址(openwrt后台地址)
 uci set network.lan.netmask='255.255.255.0'                     # IPv4 子网掩码
-uci set network.lan.gateway='192.168.1.1'                       # IPv4 网关
-uci set network.lan.broadcast='192.168.1.255'                   # IPv4 广播
+uci set network.lan.gateway='192.168.5.1'                       # IPv4 网关
+uci set network.lan.broadcast='192.168.5.255'                   # IPv4 广播
 uci set network.lan.dns='223.5.5.5 114.114.114.114'             # DNS(多个DNS要用空格分开)
 #uci set network.lan.mtu='1492'                                 # lan口mtu设置为1492
 #uci set network.lan.delegate='0'                               # 去掉LAN口使用内置的 IPv6 管理
@@ -65,7 +65,7 @@ if [[ -n "${ZZZ_PATH}" ]]; then
 fi
 
 # x86机型,默认内核6.1，修改内核为6.1
-#echo NEW_KERNEL_PATCHVER="6.1" >> ${GITHUB_ENV}
+echo NEW_KERNEL_PATCHVER="6.6" >> ${GITHUB_ENV}
 
 ##########################################添加插件###################################################
 pushd ${HOME_PATH}/package > /dev/null
