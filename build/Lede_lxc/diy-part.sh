@@ -65,7 +65,7 @@ if [[ -n "${ZZZ_PATH}" ]]; then
 fi
 
 # x86机型,默认内核6.1，修改内核为6.1
-echo "NEW_KERNEL_PATCHVER=6.6" >> ${GITHUB_ENV}
+echo NEW_KERNEL_PATCHVER="6.6" >> ${GITHUB_ENV}
 
 echo "NEW_KERNEL_PATCHVER 变量的值为：$NEW_KERNEL_PATCHVER"
 
