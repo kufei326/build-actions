@@ -5,11 +5,13 @@ luci-app-autoupdate
 luci-app-filetransfer
 luci-app-firewall
 luci-app-mosdns
+luci-app-openclash
 luci-app-passwall
 luci-app-rebootschedule
 luci-app-shortcutmenu
 luci-app-smartdns
 luci-app-ssr-plus
+luci-app-store
 luci-app-ttyd
 luci-app-turboacc
 luci-app-unblockneteasemusic
