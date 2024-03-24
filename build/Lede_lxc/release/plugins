@@ -11,6 +11,7 @@ luci-app-openclash
 luci-app-passwall
 luci-app-passwall2
 luci-app-pushbot
+luci-app-rclone
 luci-app-rebootschedule
 luci-app-smartdns
 luci-app-ssr-plus
