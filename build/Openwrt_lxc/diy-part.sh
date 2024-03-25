@@ -101,9 +101,6 @@ pushd ${HOME_PATH}/package > /dev/null
 #echo "添加主题 new theme neobird"
 #git clone https://github.com/thinktip/luci-theme-neobird.git
 
-echo 'src-git custom https://github.com/kiddin9/openwrt-packages' >>feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small-package' >>feeds.conf.default
-cat feeds.conf.default
 
 popd > /dev/null
 ##########################################修改插件名字###################################################
