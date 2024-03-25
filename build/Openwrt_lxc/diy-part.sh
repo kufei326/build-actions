@@ -71,7 +71,7 @@ fi
 # x86机型,默认内核6.1，修改内核为6.1
 #export NEW_KERNEL_PATCHVER="6.6"
 echo '-----------------定义kernel MD5，与官网一致'
-echo 'wget -qO- https://downloads.openwrt.org/snapshots/targets/x86/64/packages/ | grep -oE "[0-9a-f]{32}" | head -n 1' > ./.vermagic
+echo "$(wget -qO- https://downloads.openwrt.org/snapshots/targets/x86/64/packages/ | grep -oE '[0-9a-f]{32}' | head -n 1)" > ./.vermagic
 cat .vermagic
 
 sed -i 's/^\tgrep.*vermagic/\tcp -f \$(TOPDIR)\/\.vermagic \$(LINUX_DIR)\/\.vermagic/g' include/kernel-defaults.mk
