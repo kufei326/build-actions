@@ -4,6 +4,7 @@ luci-app-argon-config
 luci-app-dockerman
 luci-app-firewall
 luci-app-mosdns
+luci-app-openclash
 luci-app-opkg
 luci-app-passwall
 luci-app-pushbot
