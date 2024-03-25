@@ -70,14 +70,6 @@ fi
 
 # x86机型,默认内核6.1，修改内核为6.1
 #export NEW_KERNEL_PATCHVER="6.6"
-echo '-----------------定义kernel MD5，与官网一致'
-echo "$(wget -qO- https://downloads.openwrt.org/snapshots/targets/x86/64/packages/ | grep -oE '[0-9a-f]{32}' | head -n 1)" > ./.vermagic
-cat .vermagic
-
-sed -i 's/^\tgrep.*vermagic/\tcp -f \$(TOPDIR)\/\.vermagic \$(LINUX_DIR)\/\.vermagic/g' include/kernel-defaults.mk
-grep vermagic -n5 include/kernel-defaults.mk
-sed -i '/STAMP_BUILT/s#\$(SCRIPT_DIR)\/kconfig.pl \$(LINUX_DIR)/.config | \$(MKHASH) md5#cat $(LINUX_DIR)/.vermagic#' package/kernel/linux/Makefile
-grep STAMP_BUILT -n3 package/kernel/linux/Makefile
 
 
 # 禁用ipv6前缀
