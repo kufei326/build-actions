@@ -1,7 +1,6 @@
-luci-app-adguardhome
+luci-app-advanced
 luci-app-aliyundrive-webdav
 luci-app-argon-config
-luci-app-autoupdate
 luci-app-dockerman
 luci-app-firewall
 luci-app-mosdns
