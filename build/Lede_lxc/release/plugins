@@ -1,8 +1,6 @@
 luci-app-advanced
-luci-app-aliyundrive-webdav
 luci-app-argon-config
 luci-app-autoupdate
-luci-app-diskman
 luci-app-dockerman
 luci-app-filetransfer
 luci-app-firewall
@@ -10,7 +8,6 @@ luci-app-mosdns
 luci-app-openclash
 luci-app-passwall
 luci-app-passwall2
-luci-app-pushbot
 luci-app-rclone
 luci-app-rebootschedule
 luci-app-smartdns
