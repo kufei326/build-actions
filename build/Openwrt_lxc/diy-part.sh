@@ -72,6 +72,9 @@ fi
 #export NEW_KERNEL_PATCHVER="6.6"
 
 
+echo "$(wget -qO- https://downloads.openwrt.org/snapshots/targets/x86/64/packages/ | grep -oE '[0-9a-f]{32}' | head -n 1)" > .vermagic
+
+sed -ie 's/^\(.\).*vermagic$/\1cp $(TOPDIR)\/.vermagic $(LINUX_DIR)\/.vermagic/' include/kernel-defaults.mk
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 ##########################################添加插件###################################################
