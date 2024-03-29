@@ -73,6 +73,9 @@ fi
 
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '3i src-git sirpdboy  https://github.com/sirpdboy/sirpdboy-package' feeds.conf.default
+
+
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 ##########################################添加插件###################################################
