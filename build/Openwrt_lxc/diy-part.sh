@@ -70,7 +70,7 @@ fi
 
 # x86机型,默认内核6.1，修改内核为6.1
 #export NEW_KERNEL_PATCHVER="6.6"
-git clone https://github.com/kenzok8/openwrt-packages packages/new
+git clone https://github.com/kenzok8/openwrt-packages feeds/new
 
 echo "$(wget -qO- https://downloads.openwrt.org/snapshots/targets/x86/64/packages/ | grep -oE '[0-9a-f]{32}' | head -n 1)" > .vermagic
 
