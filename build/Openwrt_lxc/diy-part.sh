@@ -75,7 +75,7 @@ sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '3i src-git sirpdboy  https://github.com/sirpdboy/sirpdboy-package' feeds.conf.default
 sed -i '4i src-git openwrt https://github.com/openwrt/packages' feeds.conf.default
-
+sed -i '5i src-git wolplus https://github.com/animegasan/luci-app-wolplus' feeds.conf.default
 rm -rf feeds/sirpdboy/
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
@@ -85,7 +85,7 @@ pushd ${HOME_PATH}/package > /dev/null
 #echo "添加插件 luci-app-passwall"
 #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
-git clone --depth=1 https://github.com/animegasan/luci-app-wolplus package/luci-app-wolplus
+#git clone --depth=1 https://github.com/animegasan/luci-app-wolplus package/luci-app-wolplus
 
 
 #echo "添加插件 luci-app-ssr-plus"
