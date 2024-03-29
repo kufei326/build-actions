@@ -72,9 +72,8 @@ fi
 #export NEW_KERNEL_PATCHVER="6.6"
 git clone https://github.com/kenzok8/openwrt-packages feeds/new
 
-echo "$(wget -qO- https://downloads.openwrt.org/snapshots/targets/x86/64/packages/ | grep -oE '[0-9a-f]{32}' | head -n 1)" > .vermagic
-
-sed -ie 's/^\(.\).*vermagic$/\1cp $(TOPDIR)\/.vermagic $(LINUX_DIR)\/.vermagic/' include/kernel-defaults.mk
+sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 ##########################################添加插件###################################################
