@@ -12,8 +12,8 @@ luci-app-pushbot
 luci-app-rebootschedule
 luci-app-smartdns
 luci-app-ssr-plus
+luci-app-store
 luci-app-ttyd
-luci-app-uhttpd
 luci-app-wolplus
 luci-theme-argon
 luci-theme-bootstrap
