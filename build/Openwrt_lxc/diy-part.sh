@@ -71,11 +71,10 @@ fi
 # x86机型,默认内核6.1，修改内核为6.1
 #export NEW_KERNEL_PATCHVER="6.6"
 
-sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '1i src-git kenzo https://github.com/kenzok8/small-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
-sed -i '3i src-git autotimeset  https://github.com/sirpdboy/luci-app-autotimeset' feeds.conf.default
-sed -i '4i src-git advancedplus https://github.com/sirpdboy/luci-app-advancedplus' feeds.conf.default
-#sed -i '5i src-git wolplus https://github.com/animegasan/luci-app-wolplus' feeds.conf.default
+sed -i '3i src-git sirpdboy  https://github.com/sirpdboy/sirpdboy-package' feeds.conf.default
+./scripts/feeds install libpam liblzma libnetsnmp
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 ##########################################添加插件###################################################
