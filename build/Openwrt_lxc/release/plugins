@@ -1,4 +1,4 @@
-luci-app-advancedplus
+luci-app-advanced
 luci-app-alist
 luci-app-argon-config
 luci-app-aria2
@@ -23,6 +23,7 @@ luci-app-samba4
 luci-app-socat
 luci-app-sqm
 luci-app-ssr-plus
+luci-app-store
 luci-app-ttyd
 luci-app-upnp
 luci-app-watchcat
