@@ -1,1 +1,13 @@
-
+luci-app-adguardhome
+luci-app-aliyundrive-webdav
+luci-app-argon-config
+luci-app-autotimeset
+luci-app-dockerman
+luci-app-mosdns
+luci-app-openclash
+luci-app-passwall
+luci-app-passwall2
+luci-app-shortcutmenu
+luci-app-smartdns
+luci-app-store
+luci-theme-argon
