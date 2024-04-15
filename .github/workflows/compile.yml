@@ -159,7 +159,7 @@ jobs:
         allowUpdates: true
         removeArtifacts: true
         bodyFile: "${{ env.RELEASE_MD }}"
-        artifacts: "${{ env.HOME_PATH }}"*-*.tar.gz
+        artifacts: "${{ env.HOME_PATH }}/*-*.tar.gz"
         
     - name: 发布自动更新固件-固件
       id: autoupdate
