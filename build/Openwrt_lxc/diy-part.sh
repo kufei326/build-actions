@@ -75,15 +75,15 @@ cat <<EOF > feeds.conf.default
 src-git kenzo https://github.com/kenzok8/openwrt-packages
 src-git small https://github.com/kenzok8/small
 src-git sirpdboy https://github.com/kufei326/sirpdboy-package
-#src-git packages https://github.com/openwrt/packages.git
+src-git packages https://github.com/openwrt/packages.git
 src-git luci https://github.com/openwrt/luci.git
 src-git routing https://github.com/openwrt/routing.git
 src-git telephony https://github.com/openwrt/telephony.git
 EOF
 
-./scripts/feeds update routing && ./scripts/feeds install -a -p routing
-./scripts/feeds update luci && ./scripts/feeds install -a -p luci
-./scripts/feeds update telephony && ./scripts/feeds install -a -p telephony
+#./scripts/feeds update routing && ./scripts/feeds install -a -p routing
+#./scripts/feeds update luci && ./scripts/feeds install -a -p luci
+#./scripts/feeds update telephony && ./scripts/feeds install -a -p telephony
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 ##########################################添加插件###################################################
