@@ -148,7 +148,7 @@ jobs:
         bodyFile: "${{ env.RELEASE_MD }}"
         artifacts: "${{ env.FIRMWARE_PATH }}/*"
 
-      - name: 发布komd
+    - name: 发布komd
       continue-on-error: true
       if: steps.compile.outcome == 'success' && env.UPLOAD_RELEASE == 'true'
       uses: ncipollo/release-action@main
