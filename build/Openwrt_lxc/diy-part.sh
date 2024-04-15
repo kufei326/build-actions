@@ -83,6 +83,7 @@ EOF
 
 ./scripts/feeds update routing && ./scripts/feeds install -a -p routing
 ./scripts/feeds update luci && ./scripts/feeds install -a -p luci
+./scripts/feeds update telephony && ./scripts/feeds install -a -p telephony
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 ##########################################添加插件###################################################
