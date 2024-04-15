@@ -74,8 +74,6 @@ fi
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '3i src-git sirpdboy  https://github.com/kufei326/sirpdboy-package' feeds.conf.default
-
-
 sed -i '4i src-git packages https://github.com/openwrt/packages.git' feeds.conf.default
 sed -i '5i src-git luci https://github.com/openwrt/luci.git' feeds.conf.default
 sed -i '6i src-git routing https://github.com/openwrt/routing.git' feeds.conf.default
