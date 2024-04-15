@@ -147,6 +147,19 @@ jobs:
         removeArtifacts: true
         bodyFile: "${{ env.RELEASE_MD }}"
         artifacts: "${{ env.FIRMWARE_PATH }}/*"
+
+      - name: 发布komd
+      continue-on-error: true
+      if: steps.compile.outcome == 'success' && env.UPLOAD_RELEASE == 'true'
+      uses: ncipollo/release-action@main
+      with:
+        name: ${{ env.SOURCE }}-${{ env.LUCI_EDITION }}-${{ env.TARGET_PROFILE }}
+        tag: ${{ env.RELEASE_TAG }}
+        token: ${{ secrets.REPO_TOKEN }}
+        allowUpdates: true
+        removeArtifacts: true
+        bodyFile: "${{ env.RELEASE_MD }}"
+        artifacts: "${{ env.HOME_PATH }}*-*.tar.gz"
         
     - name: 发布自动更新固件-固件
       id: autoupdate
