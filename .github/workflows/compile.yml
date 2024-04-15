@@ -160,7 +160,14 @@ jobs:
         removeArtifacts: true
         bodyFile: "${{ env.RELEASE_MD }}"
         artifacts: "${{ env.HOME_PATH }}/*-*.tar.gz"
-        
+
+    - name: 同步内核模块
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        token: ${{ secrets.REPO_TOKEN }}
+        repository: kufei326/kmod-x86_64
+        event-type: sync
+
     - name: 发布自动更新固件-固件
       id: autoupdate
       if: steps.compile.outcome == 'success'
