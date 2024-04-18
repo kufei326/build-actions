@@ -159,7 +159,7 @@ jobs:
         allowUpdates: true
         removeArtifacts: true
         bodyFile: "${{ env.RELEASE_MD }}"
-        artifacts: "${{ env.HOME_PATH }}/*-*.tar.gz"
+        artifacts: "${{ env.FIRMWARE_PATH }}/*-*.tar.gz"
 
     - name: 同步内核模块
       uses: peter-evans/repository-dispatch@v3
