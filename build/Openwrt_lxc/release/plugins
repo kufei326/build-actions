@@ -1,2 +1,5 @@
+luci-app-firewall
+luci-app-opkg
 luci-app-smartdns
 luci-app-ttyd
+luci-theme-bootstrap
