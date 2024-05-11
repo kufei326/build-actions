@@ -70,17 +70,9 @@ fi
 
 # x86机型,默认内核6.1，修改内核为6.1
 #export NEW_KERNEL_PATCHVER="6.6"
-cat <<EOF > feeds.conf.default
-src-git kenzo https://github.com/kenzok8/openwrt-packages
-src-git small https://github.com/kenzok8/small
-src-git sirpdboy https://github.com/kufei326/sirpdboy-package
-src-git packages https://github.com/openwrt/packages.git;openwrt-23.05
-src-git luci https://github.com/openwrt/luci.git;openwrt-23.05
-src-git routing https://github.com/openwrt/routing.git;openwrt-23.05
-src-git telephony https://github.com/openwrt/telephony.git;openwrt-23.05
-EOF
+
 #sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-#sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '3i src-git sirpdboy  https://github.com/kufei326/sirpdboy-package' feeds.conf.default
 #sed -i '4i src-git packages https://github.com/openwrt/packages.git' feeds.conf.default
 #sed -i '5i src-git luci https://github.com/openwrt/luci.git' feeds.conf.default
