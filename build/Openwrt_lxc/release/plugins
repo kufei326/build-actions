@@ -11,6 +11,5 @@ luci-app-smartdns
 luci-app-ssr-plus
 luci-app-store
 luci-app-ttyd
-luci-app-wolplus
 luci-theme-argon
 luci-theme-bootstrap
