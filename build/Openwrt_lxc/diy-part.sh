@@ -78,7 +78,7 @@ sed -i '3i src-git sirpdboy  https://github.com/kufei326/sirpdboy-package' feeds
 #sed -i '5i src-git luci https://github.com/openwrt/luci.git' feeds.conf.default
 #sed -i '6i src-git routing https://github.com/openwrt/routing.git' feeds.conf.default
 #rm -rf feeds/pkgkufei326/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
-curl -s -o package/feeds/packages/xtables-addons/patches/211-fix-build-with-kernel-6.6.patch https://raw.githubusercontent.com/coolsnowwolf/packages/master/net/xtables-addons/patches/211-fix-build-with-kernel-6.6.patch
+curl -s -o feeds/packages/xtables-addons/patches/211-fix-build-with-kernel-6.6.patch https://raw.githubusercontent.com/coolsnowwolf/packages/master/net/xtables-addons/patches/211-fix-build-with-kernel-6.6.patch
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 ##########################################添加插件###################################################
