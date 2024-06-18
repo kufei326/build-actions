@@ -79,6 +79,12 @@ sed -i '3i src-git sirpdboy  https://github.com/kufei326/sirpdboy-package' feeds
 #sed -i '6i src-git routing https://github.com/openwrt/routing.git' feeds.conf.default
 #rm -rf feeds/pkgkufei326/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 
+# xtables-addons
+
+curl -s https://raw.githubusercontent.com/sbwml/r4s_build_script/master/openwrt/patch/packages-patches/xtables-addons/202-fix-lua-packetscript-for-linux-6.6.patch > feeds/packages/net/xtables-addons/patches/202-fix-lua-packetscript-for-linux-6.6.patch
+
+
+
 # 禁用ipv6前缀
 #sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 ##########################################添加插件###################################################
