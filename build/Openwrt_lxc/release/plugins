@@ -1,4 +1,5 @@
 luci-app-advanced
+luci-app-alist
 luci-app-aliyundrive-webdav
 luci-app-argon-config
 luci-app-dockerman
@@ -8,9 +9,11 @@ luci-app-openclash
 luci-app-opkg
 luci-app-passwall
 luci-app-pushbot
+luci-app-qbittorrent
 luci-app-rebootschedule
 luci-app-smartdns
 luci-app-ssr-plus
+luci-app-store
 luci-app-ttyd
 luci-app-wechatpush
 luci-app-wolplus
