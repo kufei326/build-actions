@@ -17,7 +17,7 @@ uci set network.lan.proto='static'                              # lan口静态IP
 uci set network.lan.ipaddr='192.168.5.2'                        # IPv4 地址(openwrt后台地址)
 uci set network.lan.netmask='255.255.255.0'                     # IPv4 子网掩码
 uci set network.lan.gateway='192.168.5.1'                       # IPv4 网关
-uci set network.lan.broadcast='192.168.1.255'                   # IPv4 广播
+uci set network.lan.broadcast='192.168.5.255'                   # IPv4 广播
 uci add_list network.lan.dns='223.5.5.5'                        # OpenWrt官方源码，dns设置
 uci add_list network.lan.dns='114.114.114.114'                  # OpenWrt官方源码，dns设置
 #uci set network.lan.dns='223.5.5.5 114.114.114.114'            # DNS(多个DNS要用空格分开)
@@ -67,11 +67,6 @@ if [[ -n "${ZZZ_PATH}" ]]; then
 	# sed -i "s/OpenWrt ${GITHUB_ACTOR} compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" ${ZZZ_PATH}
 	sed -i "s/OpenWrt /Ss. compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" ${ZZZ_PATH}
 fi
-
-sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
-# x86机型,默认内核6.1，修改内核为6.1
-#echo NEW_KERNEL_PATCHVER="6.1" >> ${GITHUB_ENV}
 
 ##########################################添加插件###################################################
 pushd ${HOME_PATH}/package > /dev/null
