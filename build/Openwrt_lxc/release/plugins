@@ -11,7 +11,6 @@ luci-app-pushbot
 luci-app-qbittorrent
 luci-app-rebootschedule
 luci-app-smartdns
-luci-app-ssr-plus
 luci-app-store
 luci-app-ttyd
 luci-app-wolplus
