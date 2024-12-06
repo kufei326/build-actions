@@ -8,7 +8,6 @@ luci-app-package-manager
 luci-app-passwall
 luci-app-pushbot
 luci-app-qbittorrent
-luci-app-rebootschedule
 luci-app-smartdns
 luci-app-store
 luci-app-ttyd
